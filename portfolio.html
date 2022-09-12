@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="./CSS/styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<link href="./CSS/styles.css" rel="stylesheet" />
   </head>
   <body>
      <header class="header">
@@ -20,7 +21,7 @@
             <a href="index.html" class="nav-link link">Студія</a>
           </li>
           <li class="nav-list">
-            <a href="./portfolio.html" class="nav-link link current">Портфоліо</a>
+            <a href="./portfolio.html" class="nav-link link  current">Портфоліо</a>
           </li>
           <li class="nav-list">
             <a href="#" class="nav-link link">Контакти</a>
@@ -28,8 +29,8 @@
         </ul>
         </nav>
       <ul class="list auth">
-        <li><a href="mailto:info@devstudio.com" class="auth-link link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="auth-link link  email">+38 096 111 11 11</a></li>
+        <li class="auth-list"><a href="mailto:info@devstudio.com" class="auth-link link">info@devstudio.com</a></li>
+        <li class="auth-list"><a href="tel:+380961111111" class="auth-link link">+38 096 111 11 11</a></li>
       </ul>
      </div>
      </header>
@@ -37,17 +38,14 @@
       <section class="main-area  section">
        <div class="container">
         <h1 class="visually-hidden">Список проектів</h1>
-        <ul class="filter list">
-         <div class="container buttons">
+        <ul class="filter list  buttons">
           <li class="filter-button"><button type="button" class="list-btn button">Усі</button></li>
           <li class="filter-button"><button type="button" class="list-btn button">Веб-сайти</button></li>
           <li class="filter-button"><button type="button" class="list-btn button">Додатки</button></li>
           <li class="filter-button"><button type="button" class="list-btn button">Дизайн</button></li>
           <li class="filter-button"><button type="button" class="list-btn button">Маркетинг</button></li>
-         </div>
         </ul>
-        <ul class="list">
-         <div class="container project">
+        <ul class="list  project">
           <li class="project-list">
             <a href="#Технокряк" class="link"
               ><img
@@ -89,8 +87,8 @@
           <li class="project-list">
             <a href="#Проєкт Prime" class="link"
               ><img src="./images/page2/project4.jpg" alt="Навушники" width="370" />
-              <h2 class="list-tital">Проєкт Prime</h2>
               <div class="project-description">
+              <h2 class="list-tital">Проєкт Prime</h2>
               <p class="type">Веб-сайт</p>
               </div>
             </a>
@@ -156,14 +154,13 @@
           </li>
          </div>
         </ul>
-       </div>
       </section>
     </main>
     <footer class="footer">
      <div class="container">
       <a href="./index.html" class="logo link"> <span class="logo-web">Web</span>Studio</a>
       <address class="footer-address">
-        <ul class="list">
+        <ul class="list ">
           <li>
             <a href="https://goo.su/HKAFz" target="_blank" rel="noopener noreferrer" class="link address"
               >м. Київ, пр-т Лесі Українки, 26</a
