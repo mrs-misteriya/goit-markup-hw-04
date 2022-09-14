@@ -153,18 +153,14 @@ font-size: var(--main-font-size);
 line-height: 1.17;
 letter-spacing: 0.02em;
 text-decoration: none;
-display: block;
+display: flex;
 padding-top: 32px;
 padding-bottom: 32px;
+align-items: center;
 }
 
 .mail{
-fill: var(--main-color-link);
-background-color:transparent;
-}
-
-.mail:hover{
-fill: var(--color-button)
+fill: currentColor;
 }
 
 .mail-icon{
@@ -172,12 +168,7 @@ margin-right: 10px;
 }
 
 .tel{
-fill: var(--main-color-link);
-background-color: transparent; 
-}
-
-.tel:hover{
-fill: var(--color-button)
+fill: currentColor;
 }
 
 .tel-icon{
@@ -212,12 +203,17 @@ color:#188CE8;
 }
 
 .hero{
-text-align: center;
 padding: 200px 0;
 background-color: var(--dark-background);
 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
- url("../images/hero/Img.jpg");
+url("../images/hero/Img.jpg");
+
 background-size: cover;
+background-repeat: no-repeat;
+max-width: 1600px;
+height: 600px;
+margin: 0 auto;
+text-align: center;
 }
 
 .tital-subject{
@@ -403,7 +399,7 @@ height: 44px;
 border-radius: 50%;
 
 background-color: transparent;
-fill: #AFB1B8;
+color: #AFB1B8;
 }
 
 .team-icon{
@@ -415,11 +411,7 @@ fill: currentColor;
 .team-social-icon:hover,
 .team-social-icon:focus{
 background-color: var(--color-button);
-}
-
-.team-social-icon:hover .team-icon,
-.team-social-icon:focus .team-icon{
-fill: var(--second-text-color);
+color: var(--second-text-color);
 }
 
 .clients-block{
@@ -434,8 +426,6 @@ column-gap: 30px;
 .list-clients{
 width: 170px;
 height: 92px;
-border: 1px solid #AFB1B8;
-border-radius: 4px;
 }
 
 .list-client-link{
@@ -444,7 +434,9 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 100%;
-fill: #AFB1B8
+color: #AFB1B8;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
 }
 
 .client-icon{
@@ -453,14 +445,10 @@ height: 60px;
 fill: currentColor;
 }
 
-.clients-block-list:hover,
-.clients-block-list:focus{
+.list-client-link:hover,
+.list-client-link:focus{
+color: var(--color-button);
 border-color: var(--color-button);
-}
-
-.list-client-link:hover .client-icon,
-.list-client-link:focus .client-icon{
-fill: var(--color-button);
 }
 
 .list-btn{
@@ -524,7 +512,7 @@ padding-right: 24px;
 padding-bottom: 20px;
 padding-left: 24px;
 
-border-bottom: 1px solid #EEEEEE;
+border: 1px solid #EEEEEE;
 }
 
 .list-tital{
@@ -583,13 +571,6 @@ color: #188CE8;
 color: var(--second-text-color);
 }
 
-.footer-icon{
-width: 206px;
-height: 80px;
-margin-right: auto;
-margin-bottom: 100px;
-}
-
 .connect{
 color: var(--second-text-color);
 font-weight: var(--brand-weight);
@@ -608,9 +589,8 @@ display: flex;
 column-gap: 10px;
 }
 
-.list-icon{
+.list-icon-link{
 display: flex;
-
 width: 44px;
 height: 44px;
 
@@ -628,8 +608,8 @@ width: 20px;
 height: 20px;
 }
 
-.list-icon:hover,
-.list-icon:focus{
+.list-icon-link:hover,
+.list-icon-link:focus{
 background-color: var(--color-button);
 }
 
