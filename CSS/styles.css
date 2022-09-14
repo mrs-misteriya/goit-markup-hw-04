@@ -275,13 +275,10 @@ margin: -1px;
 
 .unique{
 display: flex;
-}
-
-.unique-block{
 width: 270px;
 }
 
-.unique-block:not(:last-child){
+.unique-list:not(:last-child){
 margin-right: 30px;
 }
 
@@ -425,22 +422,20 @@ background-color: var(--color-button);
 fill: var(--second-text-color);
 }
 
+.clients-block{
+width: 1170;
+}
+
 .clients{
 display: flex;
 column-gap: 30px;
 }
 
-.clients-block-list{
+.list-clients{
 width: 170px;
 height: 92px;
-
 border: 1px solid #AFB1B8;
 border-radius: 4px;
-}
-
-.list-clients{
-width: 100%;
-height: 100%;
 }
 
 .list-client-link{
